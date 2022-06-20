@@ -26,9 +26,9 @@ jobs:
           
       - name: Commit changes
         run: |
+          git config --global --add safe.directory *
           git config --local user.email "${{ secrets.EMAIL }}"
           git config --local user.name "faruqmaulana"
-          git config --global --add safe.directory '*'
           git add -A
           git commit -m "P"
           
