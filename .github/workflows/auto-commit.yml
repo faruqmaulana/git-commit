@@ -28,7 +28,7 @@ jobs:
         run: |
           git config --local user.email "${{ secrets.EMAIL }}"
           git config --local user.name "faruqmaulana"
-
+          git config --global --add safe.directory /github/workspace
           git add -A
           git commit -m "P"
           
